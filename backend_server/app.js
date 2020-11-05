@@ -8,6 +8,7 @@ var monitorRouter = require('./routes/monitor');
 var upDataRouter = require('./routes/upData');
 var userRouter = require('./routes/user');
 var ScheduleTask = require('./business/scheduleTask');
+var compression = require('compression')
 
 var util = require("./utils/util");
 var mongoose = require('mongoose');
@@ -36,7 +37,12 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(compression()) 
+app.use(express.static(path.join(__dirname, 'public'), {
+    setHeaders: function (res, path, stat) {
+        res.set('Access-Control-Allow-Origin', '*')
+      }
+}));
 
 //cors
 app.all('*', function (req, res, next) {

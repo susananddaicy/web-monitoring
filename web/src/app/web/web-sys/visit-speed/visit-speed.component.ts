@@ -85,7 +85,7 @@ export class VisitSpeedComponent implements OnInit {
         this.loadPageLoadData(data.time, data.type);
         break;
       case 30:
-        this.loadGeoData(data.time, data.type);
+        // this.loadGeoData(data.time, data.type);
         break;
       case 40:
         this.loadBsData(data.time, data.type);
@@ -141,7 +141,7 @@ export class VisitSpeedComponent implements OnInit {
       this.loadAreaPerfData(window.globalTime.time, window.globalTime.type);
       this.loadPageLoadData(window.globalTime.time, window.globalTime.type);
 
-      this.loadGeoData(window.globalTime.time, window.globalTime.type);
+      // this.loadGeoData(window.globalTime.time, window.globalTime.type);
       this.loadBsData(window.globalTime.time, window.globalTime.type);
       this.loadOsData(window.globalTime.time, window.globalTime.type);
       this.loadWhData(window.globalTime.time, window.globalTime.type);

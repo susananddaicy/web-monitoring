@@ -83,16 +83,16 @@ export class VisitPageComponent implements OnInit {
         this.loadPvUvData(data.time, data.type);
         break;
       case 20:
-        this.loadJsData(data.time, data.type);
+        // this.loadJsData(data.time, data.type);
         break;
       case 30:
-        this.loadJsGroupData(data.time, data.type);
+        // this.loadJsGroupData(data.time, data.type);
         break;
       case 40:
-        this.loadApiData(data.time, data.type);
+        // this.loadApiData(data.time, data.type);
         break;
       case 50:
-        this.loadGeoData(data.time, data.type);
+        // this.loadGeoData(data.time, data.type);
       case 60:
         this.loadBsData(data.time, data.type);
         this.loadOsData(data.time, data.type);
@@ -185,19 +185,19 @@ export class VisitPageComponent implements OnInit {
     this.currentSelectedPage = data.page;
     if (window.globalTime) {
       this.loadPvUvData(window.globalTime.time, window.globalTime.type);
-      this.loadJsData(window.globalTime.time, window.globalTime.type);
-      this.loadJsGroupData(window.globalTime.time, window.globalTime.type);
-      this.loadApiData(window.globalTime.time, window.globalTime.type);
-      this.loadGeoData(window.globalTime.time, window.globalTime.type);
+      // this.loadJsData(window.globalTime.time, window.globalTime.type);
+      // this.loadJsGroupData(window.globalTime.time, window.globalTime.type);
+      // this.loadApiData(window.globalTime.time, window.globalTime.type);
+      // this.loadGeoData(window.globalTime.time, window.globalTime.type);
       this.loadBsData(window.globalTime.time, window.globalTime.type);
       this.loadOsData(window.globalTime.time, window.globalTime.type);
       this.loadWhData(window.globalTime.time, window.globalTime.type);
     } else {
       this.loadPvUvData(null, 4);
-      this.loadJsData(null, 4);
-      this.loadJsGroupData(null, 4);
-      this.loadApiData(null, 4);
-      this.loadGeoData(null, 4);
+      // this.loadJsData(null, 4);
+      // this.loadJsGroupData(null, 4);
+      // this.loadApiData(null, 4);
+      // this.loadGeoData(null, 4);
       this.loadBsData(null, 4);
       this.loadOsData(null, 4);
       this.loadWhData(null, 4);

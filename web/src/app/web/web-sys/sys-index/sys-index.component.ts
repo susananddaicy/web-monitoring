@@ -49,36 +49,36 @@ export class SysIndexComponent implements OnInit {
     this.unsubscribe.sub1 = this.broadcaster.on("choiceTimeToRender").subscribe((data: any) => {
       this.loadPvUvData(data.time, data.type);
       this.loadTop10Data(data.time, data.type);
-      this.loadGeoData(data.time, data.type);
+      // this.loadGeoData(data.time, data.type);
       this.loadBsData(data.time, data.type);
       this.loadOsData(data.time, data.type);
       this.loadWhData(data.time, data.type);
-      this.JsErrorRateCompareAndAvg(data.time, data.type);
+      // this.JsErrorRateCompareAndAvg(data.time, data.type);
       this.PerfSpeedCompareAndAvg(data.time, data.type);
-      this.ApiSuccRateCompareAndAvg(data.time, data.type);
+      // this.ApiSuccRateCompareAndAvg(data.time, data.type);
     });
 
     
     if (window.globalTime) {
       this.loadPvUvData(window.globalTime.time, window.globalTime.type);
       this.loadTop10Data(window.globalTime.time, window.globalTime.type);
-      this.loadGeoData(window.globalTime.time, window.globalTime.type);
+      // this.loadGeoData(window.globalTime.time, window.globalTime.type);
       this.loadBsData(window.globalTime.time, window.globalTime.type);
       this.loadOsData(window.globalTime.time, window.globalTime.type);
       this.loadWhData(window.globalTime.time, window.globalTime.type);
-      this.JsErrorRateCompareAndAvg(window.globalTime.time, window.globalTime.type);
+      // this.JsErrorRateCompareAndAvg(window.globalTime.time, window.globalTime.type);
       this.PerfSpeedCompareAndAvg(window.globalTime.time, window.globalTime.type);
-      this.ApiSuccRateCompareAndAvg(window.globalTime.time, window.globalTime.type);
+      // this.ApiSuccRateCompareAndAvg(window.globalTime.time, window.globalTime.type);
     } else {
       this.loadPvUvData(null, 4);
       this.loadTop10Data(null, 4);
-      this.loadGeoData(null, 4);
+      // this.loadGeoData(null, 4);
       this.loadBsData(null, 4);
       this.loadOsData(null, 4);
       this.loadWhData(null, 4);
-      this.JsErrorRateCompareAndAvg(null, 4);
+      // this.JsErrorRateCompareAndAvg(null, 4);
       this.PerfSpeedCompareAndAvg(null, 4);
-      this.ApiSuccRateCompareAndAvg(null, 4);
+      // this.ApiSuccRateCompareAndAvg(null, 4);
     }
   }
 
@@ -100,7 +100,7 @@ export class SysIndexComponent implements OnInit {
         this.loadTop10Data(data.time, data.type);
         break;
       case 30:
-        this.loadGeoData(data.time, data.type);
+        // this.loadGeoData(data.time, data.type);
         break;
       case 40:
         this.loadBsData(data.time, data.type);

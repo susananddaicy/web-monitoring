@@ -53,33 +53,37 @@ export class WebSysComponent {
       isActive: false,
       icon: 'line-chart'
     },
+    // {
+    //   label: 'JS错误',
+    //   value: 'jsError',
+    //   isActive: false,
+    //   icon: 'exception'
+    // },
+    // {
+    //   label: 'API请求',
+    //   value: 'apiReq',
+    //   isActive: false,
+    //   icon: 'api'
+    // },
+    // {
+    //   label: '地理',
+    //   value: 'visitGeo',
+    //   isActive: false,
+    //   icon: 'global'
+    // },
+    // {
+    //   label: '终端',
+    //   value: 'visitOs',
+    //   isActive: false,
+    //   icon: 'ie'
+    // },
     {
-      label: 'JS错误',
-      value: 'jsError',
-      isActive: false,
-      icon: 'exception'
-    },
-    {
-      label: 'API请求',
-      value: 'apiReq',
-      isActive: false,
-      icon: 'api'
-    }, {
-      label: '地理',
-      value: 'visitGeo',
-      isActive: false,
-      icon: 'global'
-    }, {
-      label: '终端',
-      value: 'visitOs',
-      isActive: false,
-      icon: 'ie'
-    }, {
       label: '用户行为追踪',
       value: 'userPath',
       isActive: false,
       icon: 'radius-setting'
-    }, {
+    }, 
+    {
       label: '资源加载详情',
       value: 'resourceDetails',
       isActive: false,

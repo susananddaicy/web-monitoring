@@ -81,7 +81,7 @@ export class CustomHighchartComponent implements OnInit {
         enabled: false
       },
       chart: {
-        type: 'column',
+        // type: 'column',
         height: 280,
         options3d: {
           enabled: true,
